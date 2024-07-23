@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --font-family: 'Karla', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    padding: 4em 2em;
+    background: var(--light-gray);
+    display: grid;
+}
+
+.article {
+    border-radius: 0.5em;
+    display: grid;
+    color: white;
+    box-shadow: 1px 1px 2px var(--grayish-blue);
+}
+
+.hero,
+.main,
+.why-us {
+    padding: 2em 2em;
+    display: grid;
+    gap: 1.5em;
+    line-height: 1.5em;
+
+}
+
+.hero {
+    background: white;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.hero-title {
+    color: var(--cyan);
+}
+
+.thirty-day {
+    font-size: 1em;
+    color: var(--bright-yellow);
+}
+
+.gain-access {
+    color: var(--grayish-blue);
+}
+
+.main {
+    background: var(--cyan);
+}
+
+.monthly-cost {
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+.per-month {
+    display: inline-block;
+    color: hsl(204, 43%, 85%);
+    font-size: 1em;
+}
+
+.monthly-cost-per-month {
+    display: flex;
+    gap: 1em;
+}
+
+.button {
+    font-family: var(--font-family);
+    cursor: pointer;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    background: var(--bright-yellow);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.why-us {
+    background: hsl(179, 62%, 50%);
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.list {
+    list-style: none;
+    color: var(--light-gray);
+}
+
+@media (min-width: 768px){
+    body {
+        height: 100vh;
+    }
+    .hero {
+        grid-area: hero;
+    }
+
+    .main {
+        grid-area: main;
+        border-radius: 0 0 0 0.5em;
+    }
+
+    .why-us {
+        grid-area: whyu;
+        border-radius: 0 0 0.5em 0;
+    }
+
+    .article {
+        margin: auto auto;
+        width: 50%;
+        grid-template-areas: 
+            'hero hero'
+            'main whyu'
+        ;
+    }
+
+    .button {
+        padding: 0.5em;
+    }
+}

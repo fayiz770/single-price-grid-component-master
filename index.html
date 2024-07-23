@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <article class="article">
     <div class="hero">
-      <h1 class="title">Join our community</h1>
+      <h1 class="hero-title">Join our community</h1>
       <h2 class="thirty-day">
-        30-day, hassle-free money guarantee
+        30-day, hassle-free money back guarantee
       </h2>
       <p class="gain-access">
         Gain access to our full library of tutorials along with expert code reviews. 
@@ -28,13 +24,16 @@
     </div>
     <div class="main">
       <h1 class="main-title">Monthly Subscription</h1>
-      <h2 class="monthly-cost">$29 <span class="per-month">per month</span></h2>
+      <div class="monthly-cost-per-month">
+        <h2 class="monthly-cost">$29</h2>
+        <span class="per-month">per month</span>
+      </div>
       <p class="main-text">Full access for less than $1 a day</p>
-      <button type="submit">Sign Up</button>
+      <button type="submit" class="button">Sign Up</button>
     </div>
     <div class="why-us">
       <h1 class="why-us-title">Why Us</h1>
-      <ul>
+      <ul class="list">
         <li>Tutorials by industry expers</li>
         <li>Peer & expert code review</li>
         <li>Coding excercises</li>
